@@ -16,4 +16,16 @@ public class programPenjualan {
             8400,
             10000};
             }
+            
+        tampilkanMenu(namaMinuman, hargaMinuman);
+}
+
+public static void tampilkanMenu(String[] arrayString, int[] arrayInteger) {
+    int panjang = (((arrayString.length)+(arrayInteger.length))/2);
+    System.out.println("##Program Penjualan Minuman##");
+    System.out.println("Nama Minuman\t | Harga Minuman");
+    System.out.println("------------------------------");
+    for(int i=0;i<panjang;i++){
+        System.out.println(arrayString[i]+"\t | "+arrayInteger[i]);
+    }
 }
